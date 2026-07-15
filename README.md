@@ -6,7 +6,7 @@
 
 Evidence-led case studies across full-stack engineering, backend systems, Java and applied AI/ML.
 
-[![Live Portfolio](https://img.shields.io/badge/View_Live_Portfolio-702F3E?style=for-the-badge&logo=vercel&logoColor=white)](https://iqra-khan-portfolio.iqra58577.chatgpt.site)
+[![Live Portfolio](https://img.shields.io/badge/View_Live_Portfolio-702F3E?style=for-the-badge&logo=vercel&logoColor=white)](https://iqra-khan-portfolio-self.vercel.app)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/import?s=https%3A%2F%2Fgithub.com%2FIqraaaakhan%2FIqra-Khan-Portfolio)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-211815?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/iqra-khan-540420265)
 [![GitHub](https://img.shields.io/badge/GitHub-C25D32?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Iqraaaakhan)
@@ -21,9 +21,9 @@ This portfolio is designed for fast recruiter review while still giving engineer
 
 | Project | What it demonstrates | Links |
 | --- | --- | --- |
-| **Enverse** | React, TypeScript, FastAPI, JWT and OTP authentication, forecasting, anomaly detection, energy analytics and a multilingual data-grounded assistant | [Case study](https://iqra-khan-portfolio.iqra58577.chatgpt.site/projects/enverse) · [Live app](https://enverse-blue.vercel.app/) · [Repository](https://github.com/Iqraaaakhan/Enverse) |
-| **DarkSky Observation System** | Java, Spring MVC, JDBC, MySQL, JSP, Maven, session authentication and Controller-Service-DAO separation | [Case study](https://iqra-khan-portfolio.iqra58577.chatgpt.site/projects/darksky) · [Repository](https://github.com/Iqraaaakhan/DarkSky-Observation-System) |
-| **KLEver** | PHP, MySQL, AJAX, OTP authentication, search, cart, Razorpay checkout, order tracking and admin workflows | [Case study](https://iqra-khan-portfolio.iqra58577.chatgpt.site/projects/klever) · [Repository](https://github.com/Iqraaaakhan/KLEver) |
+| **Enverse** | React, TypeScript, FastAPI, JWT and OTP authentication, forecasting, anomaly detection, energy analytics and a multilingual data-grounded assistant | [Case study](https://iqra-khan-portfolio-self.vercel.app/projects/enverse) · [Live app](https://enverse-blue.vercel.app/) · [Repository](https://github.com/Iqraaaakhan/Enverse) |
+| **DarkSky Observation System** | Java, Spring MVC, JDBC, MySQL, JSP, Maven, session authentication and Controller-Service-DAO separation | [Case study](https://iqra-khan-portfolio-self.vercel.app/projects/darksky) · [Repository](https://github.com/Iqraaaakhan/DarkSky-Observation-System) |
+| **KLEver** | PHP, MySQL, AJAX, OTP authentication, search, cart, Razorpay checkout, order tracking and admin workflows | [Case study](https://iqra-khan-portfolio-self.vercel.app/projects/klever) · [Repository](https://github.com/Iqraaaakhan/KLEver) |
 
 ## Preview
 
@@ -116,11 +116,11 @@ public/
 - Descriptive URLs and headings
 - Optimized WebP screenshots
 
-The default canonical origin is the current deployed portfolio URL. Set `NEXT_PUBLIC_SITE_URL` when moving to a custom domain.
+The default canonical origin is the production Vercel portfolio URL. Set `NEXT_PUBLIC_SITE_URL` only when moving to a future custom domain.
 
 ## Deployment
 
-The source is ready for native Next.js deployment on Vercel. Use the **Deploy with Vercel** button above, keep the project name `iqra-khan-portfolio`, and deploy from the repository root. The included `vercel.json` supplies the production build settings.
+The production portfolio is deployed at [iqra-khan-portfolio-self.vercel.app](https://iqra-khan-portfolio-self.vercel.app). The included `vercel.json` supplies its native Next.js build settings, and pushes to `main` deploy automatically.
 
 The current ChatGPT Sites deployment can remain online as a fallback while the Vercel deployment is verified. Vercel provides a clean `vercel.app` address even without a purchased domain.
 

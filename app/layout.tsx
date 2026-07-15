@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
-  "https://iqra-khan-portfolio.iqra58577.chatgpt.site";
+  "https://iqra-khan-portfolio-self.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

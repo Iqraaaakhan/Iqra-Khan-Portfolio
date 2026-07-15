@@ -15,7 +15,7 @@ const routes = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const base =
     process.env.NEXT_PUBLIC_SITE_URL ??
-    "https://iqra-khan-portfolio.iqra58577.chatgpt.site";
+    "https://iqra-khan-portfolio-self.vercel.app";
   return routes.map((route) => ({
     url: `${base}${route}`,
     lastModified: new Date("2026-07-15"),
