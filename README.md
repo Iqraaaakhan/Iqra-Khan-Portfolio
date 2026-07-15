@@ -7,6 +7,7 @@
 Evidence-led case studies across full-stack engineering, backend systems, Java and applied AI/ML.
 
 [![Live Portfolio](https://img.shields.io/badge/View_Live_Portfolio-702F3E?style=for-the-badge&logo=vercel&logoColor=white)](https://iqra-khan-portfolio.iqra58577.chatgpt.site)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/import?s=https%3A%2F%2Fgithub.com%2FIqraaaakhan%2FIqra-Khan-Portfolio)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-211815?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/iqra-khan-540420265)
 [![GitHub](https://img.shields.io/badge/GitHub-C25D32?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Iqraaaakhan)
 
@@ -32,7 +33,8 @@ This portfolio is designed for fast recruiter review while still giving engineer
 
 ## Stack
 
-- Next.js App Router compatible Vinext runtime
+- Next.js App Router with native Vercel production builds
+- Vinext and Cloudflare-compatible local/Sites runtime
 - React 19 and TypeScript
 - Tailwind CSS v4 build pipeline with a custom global visual system
 - Cloudflare-compatible Sites deployment
@@ -53,15 +55,21 @@ npm run dev
 
 Open the local URL shown by the development server.
 
+To run the native Next.js development server used by Vercel:
+
+```bash
+npm run dev:vercel
+```
+
 ## Quality checks
 
 ```bash
 npm run lint
 npx tsc --noEmit
-npm run build
+npm run build:vercel
 ```
 
-The production build also validates the deployable server artifact.
+The Vercel production build validates the native Next.js application.
 
 ## Project structure
 
@@ -110,9 +118,11 @@ public/
 
 The default canonical origin is the current deployed portfolio URL. Set `NEXT_PUBLIC_SITE_URL` when moving to a custom domain.
 
-## Deployment and a cleaner URL
+## Deployment
 
-The source is currently deployed through ChatGPT Sites. It can also be deployed through another Next.js-compatible host such as Vercel, then connected to a custom domain.
+The source is ready for native Next.js deployment on Vercel. Use the **Deploy with Vercel** button above, keep the project name `iqra-khan-portfolio`, and deploy from the repository root. The included `vercel.json` supplies the production build settings.
+
+The current ChatGPT Sites deployment can remain online as a fallback while the Vercel deployment is verified. Vercel provides a clean `vercel.app` address even without a purchased domain.
 
 For a custom domain:
 
@@ -130,7 +140,7 @@ To add or revise a project:
 3. Add a case-study route under `app/projects/<slug>/`.
 4. Use exact source-backed metrics and state evaluation boundaries.
 5. Add the route to `app/sitemap.ts`.
-6. Run lint, TypeScript checking, and the production build.
+6. Run lint, TypeScript checking, and `npm run build:vercel`.
 
 ## Continuous integration
 
